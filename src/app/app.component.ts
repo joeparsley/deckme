@@ -4,6 +4,9 @@ import { FirebaseToAppService } from './firebase-to-app.service'; //import servi
 import { AuthGaurdService } from './auth-gaurd.service';
 import { Router } from '@angular/router';
 import * as firebase from 'firebase';
+// how to enable jquery in component
+declare var jquery: any;
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -32,4 +35,5 @@ export class AppComponent {
   logout() {
     this.authService.logout();
   }
+
 }
