@@ -3527,7 +3527,7 @@ $mat-tooltip-vertical-padding: ($mat-tooltip-target-height - $mat-tooltip-font-s
 @include mat-core();
 
 $app-primary: mat-palette($mat-green, 800, 400, 900);
-$app-accent:  mat-palette($mat-yellow, 100, 200, 300);
+$app-accent:  mat-palette($mat-green, 800, 400, 900);
 $app-warn: mat-palette($mat-orange, A400, A200);
 
 

@@ -24,6 +24,7 @@ export class AppComponent {
   jundTheme: string = "/src/themes/naya-theme/naya-theme.css";
   bantTheme: string = "/src/themes/bant-theme/bant-theme.css";
   grixisTheme: string = "/src/themes/grixis-theme/grixis-theme.css";
+  jeskaiTheme: string = "/src/themes/jeskai-theme/jeskai-theme.css";
   nayaTheme: string = "/src/themes/naya-theme/naya-theme.css";
   esperTheme: string = "/src/themes/esper-theme/esper-theme.css";
   marduTheme: string = "/src/themes/mardu-theme/mardu-theme.css";
@@ -49,30 +50,43 @@ export class AppComponent {
 
   getJund() {
     $('#userTheme').attr('href', this.jundTheme);
+    $('.background').attr('style', "background-color:#303030");
   }
   getBant() {
     $('#userTheme').attr('href', this.bantTheme);
+    $('.background').attr('style', "background-color:#FFF9C4");
   }
   getGrixis() {
     $('#userTheme').attr('href', this.grixisTheme);
+    $('.background').attr('style', "background-color:#8E24AA");
+  }
+  getJeskai() {
+    $('#userTheme').attr('href', this.jeskaiTheme);
+    $('.background').attr('style', "background-color:#FFF9C4");
   }
   getNaya() {
     $('#userTheme').attr('href', this.nayaTheme);
+    $('.background').attr('style', "background-color:#FFF9C4");
   }
   getEsper() {
     $('#userTheme').attr('href', this.esperTheme);
+    $('.background').attr('style', "background-color:#FFF9C4");
   }
   getMardu() {
     $('#userTheme').attr('href', this.marduTheme);
+    $('.background').attr('style', "background-color:#303030");
   }
   getSultai() {
     $('#userTheme').attr('href', this.sultaiTheme);
+    $('.background').attr('style', "background-color:#303030");
   }
   getTemur() {
     $('#userTheme').attr('href', this.temurTheme);
+    $('.background').attr('style', "background-color:#00ACC1");
   }
   getAbzan() {
     $('#userTheme').attr('href', this.abzanTheme);
+    $('.background').attr('style', "background-color:#FFF9C4");
   }
 
 }
