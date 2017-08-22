@@ -36,24 +36,11 @@ User can receive email verification of account creation and password reset | 'Re
 * Clone this repository to your machine
 
   `git clone https://github.com/joeparsley/deckme`
-* Email joewparsley@gmail.com and in the Subject field, copy and paste `Deckme Database config key request:` to receive your database config key
 * Open your terminal and navigate to the project directory
 * While in Terminal, Run then command:
   * `npm install`
-
-* Create a file named `api-keys.ts` in `src/app` folder
-  * Copy and paste the key sent in your email to this file and save it. It should look something kind of like this!
-    * `export var masterFirebaseConfig = {
-  apiKey: "XXXXXXXXXXXXXXXXXXXX",
-  authDomain: "XXXXXXXXXXXXX",
-  databaseURL: "XXXXXX",
-  projectId: "XXXXXXXXX",
-  storageBucket: "XXXXXXXX",
-  messagingSenderId: "XXXXXXX"
-}`
-*  
-* Locate package.json for Angular commands if you're not familiar with Angular CLI
 * Run the command while in the project directory `ng serve`
+* Locate package.json for additional Angular commands if you're not familiar with Angular CLI
 * Last but not least, have fun!
 * Please log any contributions!
 
