@@ -39,6 +39,19 @@ User can receive email verification of account creation and password reset | 'Re
 * Open your terminal and navigate to the project directory
 * While in Terminal, Run then command:
   * `npm install`
+* Create a new FireBase database
+* Click on the Authentication tab in the top left and enable `Email/Password` and `Google` authentication
+* Import the `sample-database.json` at the top of directory
+* Create a File in `src/app` called `api-keys.ts`
+  * Copy and past this block of code, and replace the the dummy info with your FireBase info
+`export var masterFirebaseConfig = {
+  apiKey: "YOUR FIREBASE INFORMATION",
+  authDomain: "YOUR FIREBASE INFORMATION",
+  databaseURL: "YOUR FIREBASE INFORMATION",
+  projectId: "YOUR FIREBASE INFORMATION",
+  storageBucket: "YOUR FIREBASE INFORMATION",
+  messagingSenderId: "YOUR FIREBASE INFORMATION"
+}``
 * Run the command while in the project directory `ng serve`
 * Locate package.json for additional Angular commands if you're not familiar with Angular CLI
 * Last but not least, have fun!
