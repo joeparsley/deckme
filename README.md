@@ -1,10 +1,10 @@
 # DeckMe
   Magic: The Gathering deck building application that allows users to search for cards and create a deck.
 
-##### Joe Parsley(Design), Adrian Agnic(Development), Jared Luedtke(Development)  (7-27-2017)
+##### Joe Parsley(Project Lead, Front-End Development, Design), Adrian Agnic(Back-End Development), Jared Luedtke(Back-End Development)  (7-27-2017)
 
 ## Description
-  Application that allows users to search for specific Magic cards, and construct a deck. Users can create an account to keep track of all their decks. Users can also view statistical information about their deck.
+  Deckme is a Application that allows users to search for Magic The Gathering cards and store them into decks. Once a card is saved to a deck it gives the user access to Visual Data to help them better understand the content of their deck.
 
 ## Specifications
 Spec | Input | Output
@@ -20,22 +20,42 @@ User views profile page | 'Profile' | ' '
 User updates account information | 'Update Email' | 'newemail@yes.com'
 User can receive email verification of account creation and password reset | 'Reset Password' | 'Password Reset Email Sent'
 
+## Installation Requirements
+
+* You must install or have installed a current version of:
+
+  * [Node and npm](https://nodejs.org/en/)
+
+  * [TypeScript](https://www.typescriptlang.org/#download-links)
+
+  * [Angular CLI](https://github.com/angular/angular-cli)
+
 
 ## Installation
-* Go-to <a href="https://github.com/jluedtke/deck-me">GitHub</a>
-* Clone repository to your machine (ex. git clone www.git.com/project)
-* Navigate to the project directory with a terminal
-* Run commands:
-  * npm install
-  * npm install promise-polyfill --save
-* Create a file named 'api-keys.ts' in src/app
-  * it should contain:
-    * export var masterFirebaseConfig = {
-      ~FIREBASE INFORMATION HERE*
-    }
-* Locate package.json for Angular commands
-  * Run 'ng serve' to view locally (localhost:4200)
-* Please log any contributions
+### For most current version of this app, follow the instructions below, otherwise you can visit the live version of this site here! [Deckme](https://deckme.me/)
+* Clone this repository to your machine
+
+  `git clone https://github.com/joeparsley/deckme`
+* Email joewparsley@gmail.com and in the Subject field, copy and paste `Deckme Database config key request:` to receive your database config key
+* Open your terminal and navigate to the project directory
+* While in Terminal, Run then command:
+  * `npm install`
+
+* Create a file named `api-keys.ts` in `src/app` folder
+  * Copy and past the key sent in your email to this file and save it. It should look something kind of like this!
+    * `export var masterFirebaseConfig = {
+  apiKey: "XXXXXXXXXXXXXXXXXXXX",
+  authDomain: "XXXXXXXXXXXXX",
+  databaseURL: "XXXXXX",
+  projectId: "XXXXXXXXX",
+  storageBucket: "XXXXXXXX",
+  messagingSenderId: "XXXXXXX"
+}`
+*  
+* Locate package.json for Angular commands if you're not familiar with Angular CLI
+* Run the command while in the project directory `ng serve`
+* Last but not least, have fun!
+* Please log any contributions!
 
 ## Technologies
 * Angular
@@ -43,12 +63,14 @@ User can receive email verification of account creation and password reset | 'Re
   * Typescript
 * Firebase
 * Charts.js
-* Material
+* Angular Material
 * HTML
-* CSS/Sass
+* CSS/SASS
+* [Magic the Gathering API](https://magicthegathering.io/)
 
 ## Known Bugs
-  Certain cards without a multiverse id cannot be added to a deck
+  * Certain cards without a multiverse id cannot be added to a deck
+  * Certain cards from the database don't render properly due to image sizing issues
 
 ## License
   Protected under MIT License
