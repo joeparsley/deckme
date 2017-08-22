@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Firebase Creds
-/src/app/api-keys.ts
+/api-keys.ts

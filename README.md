@@ -42,7 +42,7 @@ User can receive email verification of account creation and password reset | 'Re
   * `npm install`
 
 * Create a file named `api-keys.ts` in `src/app` folder
-  * Copy and past the key sent in your email to this file and save it. It should look something kind of like this!
+  * Copy and paste the key sent in your email to this file and save it. It should look something kind of like this!
     * `export var masterFirebaseConfig = {
   apiKey: "XXXXXXXXXXXXXXXXXXXX",
   authDomain: "XXXXXXXXXXXXX",
