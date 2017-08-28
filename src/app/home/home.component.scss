@@ -11,7 +11,7 @@ $neat-grid: (
 .container {
   padding: 20px;
   @include grid-container;
-  height: 100vh;
+  height: calc(100vh - 200px);
 
   .welcome {
     @include grid-column(12);
