@@ -2,17 +2,19 @@
 <div class="container">
   <div class="welcome">
     <h1>Welcome To DeckMe!</h1>
-    <h2>A simple Magic The Gathering deck building application. Just create an account, log in, and start creating.</h2>
+    <h2>Deck me is a simple and easy to use Magic The Gathering deck building application. Simply create an account or login to start building!</h2>
   </div>
   <div class="user-login">
     <div class="login-pannle">
-      <h2>Create an Account:</h2>
+      <!-- <h2>Create an Account:</h2> -->
         <md-card color="accent"
                  class="new-user"
         >
         <!-- CARD HEADER -->
+        <h2 id="newUserTitle">Create an Account:</h2>
         <md-card-header>
-            <md-card-title><i class="material-icons">account_circle</i>New User:</md-card-title>
+            <!-- <md-card-title id="newUserTitle">Create an Account:</md-card-title> -->
+            <md-card-title id="newUserIcon"><i class="material-icons">account_circle</i>New User:</md-card-title>
           </md-card-header>
           <!-- CARD CONTENT -->
           <md-card-content>
@@ -32,12 +34,14 @@
 
           </md-card-content>
         </md-card>
-      <h2>Already Have an account?</h2>
+        <p>-Or-</p>
+      <!-- <h2>Already Have an account?</h2> -->
       <md-card color="accent"
                class="old-user"
       >
+      <h2 id="oldUserTitle">Already Have an account?</h2>
       <md-card-header>
-          <md-card-title><i class="material-icons">face</i>Login:</md-card-title>
+          <md-card-title id="oldUserIcon"><i class="material-icons">face</i>Login:</md-card-title>
         </md-card-header>
         <!-- CARD CONTENT -->
         <md-card-content>
@@ -49,13 +53,13 @@
             <input mdInput type="password" placeholder="Password" #loginPassword>
           </md-input-container>
 
-          <button md-raised-button color="accent" (click)="loginUser(loginEmail.value, loginPassword.value); loginEmail.value=''; loginPassword.value='';">Login</button>
+          <button id="oldUserSubmit"md-raised-button color="accent" (click)="loginUser(loginEmail.value, loginPassword.value); loginEmail.value=''; loginPassword.value='';">Login</button>
 
           <h3>Forgot Password?</h3>
           <md-input-container color="accent">
             <input mdInput type="text" #resetPEmail placeholder="Email">
           </md-input-container>
-          <button md-raised-button color="accent" (click)="sendResetPEmail(resetPEmail.value); resetPEmail.value='';">Send Reset Email</button>
+          <button id="passwordResetButton"md-raised-button color="accent" (click)="sendResetPEmail(resetPEmail.value); resetPEmail.value='';">Send Reset Email</button>
         </md-card-content>
       </md-card>
     </div>

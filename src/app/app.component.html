@@ -11,7 +11,7 @@
               <i class="material-icons">person</i>
               <span><a routerLink="profile">{{local.displayName}}</a></span>
             </div>
-            <button id="navMenu" md-button [mdMenuTriggerFor]="themeMenu">Theme</button>
+            <!-- <button id="navMenu" md-button [mdMenuTriggerFor]="themeMenu">Theme</button> -->
             <button id="navMenu" md-button [mdMenuTriggerFor]="appMenu"><md-icon>menu</md-icon> Menu</button>
           </div>
         </md-toolbar-row>
@@ -26,7 +26,7 @@
           <button md-menu-item (click)="logout()">Logout</button>
         </div>
       </md-menu>
-      <md-menu color="accent" #themeMenu="mdMenu" id="dropDown">
+      <!-- <md-menu color="accent" #themeMenu="mdMenu" id="dropDown">
         <button md-menu-item (click)="getJund()">Jund Theme</button>
         <button md-menu-item (click)="getBant()">Bant Theme</button>
         <button md-menu-item (click)="getGrixis()">Grixis Theme</button>
@@ -37,7 +37,7 @@
         <button md-menu-item (click)="getSultai()">Sultai Theme</button>
         <button md-menu-item (click)="getTemur()">Temur Theme</button>
         <button md-menu-item (click)="getAbzan()">Abzan Theme</button>
-      </md-menu>
+      </md-menu> -->
     </header>
     <div class="router-container">
       <router-outlet></router-outlet>
