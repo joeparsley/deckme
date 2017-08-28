@@ -15,7 +15,7 @@ export class AdriansService {
     let artifact: number = 0;
     let planeswalker: number = 0;
     for (let i = 0; i < deck.length; i++) {
-      if (deck[i].types[0] == 'Land') {
+      if (deck[i].types[0] === 'Land') {
         land += 1;
       } else if (deck[i].types[0] === 'Creature') {
         creature += 1;

@@ -1,6 +1,6 @@
-@import "../../assets/bourbon/bourbon";
-@import "../../assets/neat/neat";
-@import "../../assets/var.scss";
+@import "../../sass-imports/bourbon/bourbon";
+@import "../../sass-imports/neat/neat";
+@import "../../sass-imports/variables.scss";
 
 $neat-grid: (
   columns: 12,
@@ -11,10 +11,13 @@ $neat-grid: (
 
 .container {
   @include grid-container;
+  height: 100vh;
+  overflow: auto;
   .welcome {
     @include grid-column(12);
     @include size(100% 200px);
     text-align: center;
+    font-family: $titleFont;
 
     h1 {
       font-size: 48px;
