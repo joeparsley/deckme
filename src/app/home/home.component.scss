@@ -8,12 +8,11 @@ $neat-grid: (
 );
 
 
-
 .container {
+  padding: 20px;
   @include grid-container;
   height: 100vh;
-  overflow: auto;
-  border: $test1;
+
   .welcome {
     @include grid-column(12);
     @include size(100% 30%);
@@ -23,7 +22,6 @@ $neat-grid: (
     align-items: center;
     text-align: center;
     font-family: $titleFont;
-    border: $test2;
 
     h1 {
       font-size: 58px;
@@ -32,7 +30,6 @@ $neat-grid: (
 
     h1, h2 {
       color: white;
-      text-shadow: 1px 1px 1px black;
     }
 
   }
@@ -42,7 +39,6 @@ $neat-grid: (
     @include size(100% 70%);
     display: flex;
     justify-content: center;
-    border: $test3;
 
     .login-pannle {
       @include size(1100px 500px);
@@ -52,7 +48,6 @@ $neat-grid: (
 
       h2 {
         color: white;
-        text-shadow: 1px 1px 1px black;
         text-align: center;
         font-size: 26px;
       }
@@ -146,6 +141,31 @@ $neat-grid: (
             color: white;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+
+    .user-login {
+      margin-bottom: 110px;
+      .login-pannle {
+        height: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 110px;
+      }
+
+      .new-user {
+        @include size(400px);
+        margin-top: 10px;
+      }
+      .old-user {
+        margin-bottom: 10px;
+
       }
     }
   }
