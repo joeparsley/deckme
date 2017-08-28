@@ -38,18 +38,18 @@
         </md-card-header>
         <!-- CARD CONTENT -->
         <md-card-content>
-          <md-input-container color="accent">
+          <md-input-container color="warn">
             <input mdInput type="text" placeholder="Email" #loginEmail>
           </md-input-container>
 
-          <md-input-container color="accent">
+          <md-input-container color="warn">
             <input mdInput type="password" placeholder="Password" #loginPassword>
           </md-input-container>
 
           <button id="oldUserSubmit"md-raised-button color="accent" (click)="loginUser(loginEmail.value, loginPassword.value); loginEmail.value=''; loginPassword.value='';">Login</button>
 
           <h3>Forgot Password?</h3>
-          <md-input-container color="accent">
+          <md-input-container color="warn">
             <input mdInput type="text" #resetPEmail placeholder="Email">
           </md-input-container>
           <button id="passwordResetButton"md-raised-button color="accent" (click)="sendResetPEmail(resetPEmail.value); resetPEmail.value='';">Send Reset Email</button>

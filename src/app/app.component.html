@@ -2,20 +2,14 @@
   <div class="container">
     <header>
       <md-toolbar class="nav-bar"color="primary">
-        <md-toolbar-row>
-
-          <span id="logo" routerLink=''>DeckMe</span>
-          <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/189292-200.png" alt="">
-          <div class="nav-box">
-            <div class="user-name" *ngIf="isLoggedIn">
-              <i class="material-icons">person</i>
-              <span><a routerLink="profile">{{local.displayName}}</a></span>
-            </div>
-            <!-- <button id="navMenu" md-button [mdMenuTriggerFor]="themeMenu">Theme</button> -->
-            <button id="navMenu" md-button [mdMenuTriggerFor]="appMenu"><md-icon>menu</md-icon> Menu</button>
-          </div>
-        </md-toolbar-row>
-
+        <img src="assets/box.png" alt="">
+        <span id="logo" routerLink=''>DeckMe</span>
+        <span class="toolbar-spacer"></span>
+        <div class="user-name" *ngIf="isLoggedIn">
+          <i class="material-icons">person</i>
+          <span><a routerLink="profile">{{local.displayName}}</a></span>
+        </div>
+        <button id="navMenu" md-button [mdMenuTriggerFor]="appMenu"><md-icon>menu</md-icon> Menu</button>
       </md-toolbar>
       <md-menu color="accent" #appMenu="mdMenu" id="dropDown">
         <button md-menu-item routerLink="">Home</button>
@@ -26,37 +20,29 @@
           <button md-menu-item (click)="logout()">Logout</button>
         </div>
       </md-menu>
-      <!-- <md-menu color="accent" #themeMenu="mdMenu" id="dropDown">
-        <button md-menu-item (click)="getJund()">Jund Theme</button>
-        <button md-menu-item (click)="getBant()">Bant Theme</button>
-        <button md-menu-item (click)="getGrixis()">Grixis Theme</button>
-        <button md-menu-item (click)="getJeskai()">Jeskai Theme</button>
-        <button md-menu-item (click)="getNaya()">Naya Theme</button>
-        <button md-menu-item (click)="getEsper()">Esper Theme</button>
-        <button md-menu-item (click)="getMardu()">Mardu Theme</button>
-        <button md-menu-item (click)="getSultai()">Sultai Theme</button>
-        <button md-menu-item (click)="getTemur()">Temur Theme</button>
-        <button md-menu-item (click)="getAbzan()">Abzan Theme</button>
-      </md-menu> -->
     </header>
     <div class="router-container">
       <router-outlet></router-outlet>
     </div>
     <footer>
       <md-toolbar class="footer" color="primary">
-        <md-toolbar-row>
-          <span class="copyRight"> © 2017 Copyright Joe Parsley, Jared Luedtke, Adrian Agnic</span>
-          <span class="copyRight"> Beta Version 1.0</span>
-          <span class="toolbar-spacer"></span>
+        <div class="copyRight">
+          <p> © 2017 Copyright Joe Parsley</p>
+        </div>
+        <div class="copyRight">
+          <p> Beta Version 1.0</p>
+        </div>
+        <span class="toolbar-spacer"></span>
+        <div class="footer-links">
           <div class="powered-by">
             <span>Powered by:</span>
             <button class="button-1" md-button><a href="http://magicthegathering.io/">MTG API</a></button>
           </div>
-          <div class="copyRight">
+          <div class="github-link">
             <span>Links:</span>
-            <button class="button-2" md-button><a href="https://github.com/jluedtke/deck-me">Our GitHub</a></button>
+            <button class="button-2" md-button><a href="https://github.com/joeparsley/deckme">Our GitHub</a></button>
           </div>
-        </md-toolbar-row>
+        </div>
       </md-toolbar>
     </footer>
   </div>
