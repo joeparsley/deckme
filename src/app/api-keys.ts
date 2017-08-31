@@ -1,4 +1,3 @@
-
 export var masterFirebaseConfig = {
   apiKey: "AIzaSyBEc4fJ8rwF3NhzDpBy6b7MkypAIf94xGA",
   authDomain: "deckme-5a084.firebaseapp.com",

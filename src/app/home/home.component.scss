@@ -147,6 +147,30 @@ $neat-grid: (
   }
 }
 
+@media only screen and (max-width: 1700px) {
+  .container {
+
+    .user-login {
+
+      .login-pannle {
+
+        .new-user {
+          @include size(475px);
+        }
+
+        .old-user {
+          @include size(475px);
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
 @media only screen and (max-width: 1300px) {
   .container {
     height: 1300px;
